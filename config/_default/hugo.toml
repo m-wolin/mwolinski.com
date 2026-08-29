@@ -1,0 +1,9 @@
+baseURL = "https://mwolinski.com/"
+defaultContentLanguage = "en"
+title = "M. Wolinski"
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+
+theme = "DoIt"

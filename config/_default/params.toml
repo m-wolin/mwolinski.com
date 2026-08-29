@@ -1,0 +1,138 @@
+version = "1.0.X"
+defaultTheme = "auto"
+gitRepo = ""
+fingerprint = ""
+dateFormat = "2006-01-02"
+images = ["/images/avatar.jpg"]
+enablePWA = false
+license = ''
+bundle = false
+
+[author]
+  name = "M. Wolinski"
+  email = "mrcwolinski@gmail.com"
+  link = ""
+  avatar = "/images/avatar.jpg"
+  gravatarEmail = ""
+
+[image]
+  cacheRemote = true
+  optimise = true
+
+[header]
+  themeChangeMode = "switch"
+  [header.title]
+    logo = ""
+    name = "M. Wolinski"
+    pre = ""
+    post = ""
+    typeit = false
+
+[footer]
+  enable = true
+  custom = ''
+  hugo = false
+  hostedOn = '<a title="GitHub Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>'
+  copyright = true
+  author = true
+  since = 2026
+  icp = ""
+  license = ''
+
+[section]
+  paginate = 10
+  dateFormat = "01-02"
+  rss = 10
+  [section.recentlyUpdated]
+    enable = false
+
+[list]
+  paginate = 10
+  dateFormat = "01-02"
+  rss = 10
+
+[page]
+  hiddenFromHomePage = false
+  hiddenFromSearch = false
+  twemoji = false
+  lightgallery = true
+  ruby = false
+  fraction = false
+  linkToMarkdown = false
+  rssFullText = false
+  seriesNavigation = false
+  enableLastMod = true
+  enableWordCount = true
+  enableReadingTime = true
+  [page.instantpage]
+    enable = true
+  [page.toc]
+    enable = true
+    keepStatic = false
+    auto = true
+  [page.code]
+    maxShownLines = 20
+    lineNos = true
+    wrap = false
+    header = true
+  [page.table]
+    sort = true
+  [page.header]
+    [page.header.number]
+      enable = false
+  [page.math]
+    enable = true
+    blockLeftDelimiter = ""
+    blockRightDelimiter = ""
+    inlineLeftDelimiter = ""
+    inlineRightDelimiter = ""
+    copyTex = true
+    mhchem = true
+    mathjax = false
+  [page.share]
+    enable = true
+    Facebook = false
+    Linkedin = true
+    Reddit = false
+    Twitter = true
+    HackerNews = true
+  [page.comment]
+    enable = false
+  [page.library]
+    [page.library.css]
+    [page.library.js]
+  [page.seo]
+    images = []
+    [page.seo.publisher]
+      name = "M. Wolinski"
+      logoUrl = "/images/avatar.jpg"
+  [page.related]
+    enable = true
+    count = 5
+
+[sponsor]
+  enable = false
+
+[typeit]
+  speed = 100
+  cursorSpeed = 1000
+  cursorChar = "|"
+  duration = -1
+
+[verification]
+
+[seo]
+  image = ""
+  thumbnailUrl = ""
+
+[analytics]
+  enable = false
+
+[cookieconsent]
+  enable = false
+
+[cdn]
+  data = ""
+
+[compatibility]
+  polyfill = false

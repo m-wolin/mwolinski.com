@@ -1,0 +1,54 @@
+description = "Portfolio and engineering blog of M. Wolinski — structural engineering and software."
+keywords = ["structural engineering", "software engineering", "coding", "portfolio"]
+
+[app]
+  title = "M. Wolinski"
+  noFavicon = false
+  svgFavicon = ""
+  iconColor = "#5bbad5"
+  tileColor = "#da532c"
+
+[search]
+  enable = true
+  type = "fuse"
+  contentLength = 4000
+  placeholder = ""
+  maxResultLength = 10
+  snippetLength = 40
+  highlightTag = "em"
+  absoluteURL = false
+  [search.fuse]
+    isCaseSensitive = false
+    minMatchCharLength = 2
+    findAllMatches = false
+    location = 0
+    threshold = 0.1
+    distance = 100
+    ignoreLocation = true
+    useExtendedSearch = false
+    ignoreFieldNorm = false
+
+[home]
+  rss = 10
+  [home.profile]
+    enable = true
+    gravatarEmail = ""
+    avatarURL = "/images/avatar.jpg"
+    avatarLinkURL = ""
+    title = "M. Wolinski"
+    subtitle = "Structural Engineer & Software Developer"
+    typeit = false
+    social = true
+    disclaimer = ""
+  [home.posts]
+    enable = true
+    paginate = 7
+
+[social]
+  Email = "mrcwolinski@gmail.com"
+  GitHub = ""
+  Linkedin = ""
+  RSS = true
+
+[sponsor]
+  enable = false
