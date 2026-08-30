@@ -23,7 +23,7 @@ bundle = false
   themeChangeMode = "switch"
   [header.title]
     logo = ""
-    name = "M. Wolinski"
+    name = "Home"
     pre = ""
     post = ""
     typeit = false

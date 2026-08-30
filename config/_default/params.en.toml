@@ -1,4 +1,4 @@
-description = "Portfolio and engineering blog of M. Wolinski — structural engineering and software."
+description = "engineering blog Marcin Wolinski — structural engineering and software."
 keywords = ["structural engineering", "software engineering", "coding", "portfolio"]
 
 [app]
@@ -36,7 +36,7 @@ keywords = ["structural engineering", "software engineering", "coding", "portfol
     avatarURL = "/images/avatar.jpg"
     avatarLinkURL = ""
     title = "M. Wolinski"
-    subtitle = "Structural Engineer & Software Developer"
+    subtitle = "Structural Engineer"
     typeit = false
     social = true
     disclaimer = ""
@@ -45,9 +45,9 @@ keywords = ["structural engineering", "software engineering", "coding", "portfol
     paginate = 7
 
 [social]
-  Email = "mrcwolinski@gmail.com"
-  GitHub = ""
-  Linkedin = ""
+  Email = "poczta@mwolinski.com"
+  GitHub = "https://github.com/m-wolin"
+  Linkedin = "https://www.linkedin.com/in/mwolinski/"
   RSS = true
 
 [sponsor]

@@ -1,0 +1,12 @@
+// ==============================
+// Custom style
+// ==============================
+
+// Left-align titles on standalone pages (About, etc.) instead of the
+// theme's default right-alignment, to match left-aligned body content.
+.special {
+  .single-title,
+  .single-subtitle {
+    text-align: left;
+  }
+}
