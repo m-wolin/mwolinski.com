@@ -1,6 +1,6 @@
 baseURL = "https://mwolinski.com/"
 defaultContentLanguage = "en"
-title = "M. Wolinski"
+title = "Marcin Woliński | Blog"
 
 enableRobotsTXT = true
 enableGitInfo = true

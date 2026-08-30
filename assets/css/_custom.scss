@@ -10,3 +10,15 @@
     text-align: left;
   }
 }
+
+// Keep the post byline ("Author") small and muted instead of the
+// theme's default larger, accent-colored author link.
+.post-meta .post-author-label {
+  font-size: 0.8rem;
+
+  &,
+  &:hover,
+  &:active {
+    color: $global-font-secondary-color;
+  }
+}

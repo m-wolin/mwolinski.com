@@ -1,0 +1,7 @@
+{{- /*
+  Simplified post byline: no avatar, generic "Author" label, kept small
+  and muted via .post-author-label in assets/css/_custom.scss.
+*/ -}}
+{{- $link := .Params.authorlink | default .Site.Params.Author.link | default .Site.Home.RelPermalink -}}
+{{- $options := dict "Class" "post-author-label" "Destination" $link "Title" "Author" "Rel" "author" "Content" (T "author") -}}
+{{- partial "plugin/link.html" $options -}}
