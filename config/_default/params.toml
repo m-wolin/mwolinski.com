@@ -126,7 +126,9 @@ bundle = false
   thumbnailUrl = ""
 
 [analytics]
-  enable = false
+  enable = true
+  [analytics.cloudflare]
+    token = "5c7887d80724438c8e68a58c4da3e179"
 
 [cookieconsent]
   enable = false
