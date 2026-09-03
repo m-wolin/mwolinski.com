@@ -22,3 +22,10 @@
     color: $global-font-secondary-color;
   }
 }
+
+// Add more breathing room between body text and figures than the
+// theme's default 0.5rem all-around margin.
+.single .content figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

@@ -71,7 +71,7 @@ bundle = false
     keepStatic = false
     auto = true
   [page.code]
-    maxShownLines = 20
+    maxShownLines = 1000
     lineNos = true
     wrap = false
     header = true
