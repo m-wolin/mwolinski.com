@@ -29,3 +29,29 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+// The post-meta block was moved (in layouts/posts/single.html) to sit
+// after the article content instead of before it — give it some
+// separation from the text above it.
+.single .post-meta {
+  margin-top: 2rem;
+}
+
+// Justify body paragraphs. Hyphenation avoids large gaps on narrow
+// lines, and text-align-last keeps a paragraph's final line from
+// being stretched to the full width.
+.single .content p {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
+// The {{< figure >}} shortcode wraps its caption in figcaption > p,
+// which otherwise inherits the paragraph justify rule above (its
+// text-align-last: left flattens short captions to the left).
+// Override back to centered.
+.single .content figure figcaption p {
+  text-align: center;
+  text-align-last: center;
+  hyphens: none;
+}

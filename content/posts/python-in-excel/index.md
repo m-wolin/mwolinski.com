@@ -7,31 +7,31 @@ categories: ["Python"]
 tags: ["python", "Excel"]
 ---
 
-In 2024 Microsoft released the Python in Excel feature, yet I have never seen anyone use it — despite it being generally available. So I decided to try it myself, and it's great. Let me show you how it can be used in daily Structural Engineer work.
+In 2024 Microsoft released the Python in Excel feature, yet I have never seen anyone use it - despite it being generally available. So I decided to try it myself, and it's great. Let me show you how it can be used in daily Structural Engineer work.
 
 And let me be clear: I'm not a fan of Excel for structural calculations, but I can't escape from reality.
 
 ## Visualisation
 
-The best use case for me is visualization. Using matplotlib, I can visualize much more than standard built-in charts — shapes, dimensions, colors, finite element meshes, legends, and more.
+The best use case for me is visualization. Using matplotlib, I can visualize much more than standard built-in charts - shapes, dimensions, colors, finite element meshes, legends, and more.
 
 ### Soil Profile Example
 
 A lot of the spreadsheets in my private library involve geotechnical calculations, and all of them have a soil profile. Previously it was just a table, but with Python in Excel I can dynamically plot the soil profile.
 
 
-{{< figure src="soil-profile.png" caption="Soil profile plotted dynamically with Python in Excel" alt="Plotted soil profile with layer colors and labels" >}}
+{{< figure src="soil-profile.png" caption="Soil profile plotted dynamically with Python in Excel." alt="Plotted soil profile with layer colors and labels" >}}
 
-### Foundation Pad Example
+### Strip Footing Example
 
-Another real-life example is a spreadsheet for foundation pads I wrote a while ago, but it always lacked good visuals, so I hesitated to use it for official printouts. Now I can plot a nice, dynamic figure and include it directly in the final report.
+Another real-life example is a spreadsheet for strip footings I wrote a while ago, but it always lacked good visuals, so I hesitated to use it for official printouts. Now I can plot a nice, dynamic figure and include it directly in the final report.
 
 
-{{< figure src="foundation-pad.png" caption="Foundation pad geometry and reinforcement plotted with Python in Excel" alt="Plotted foundation pad plan with dimensions" >}}
+{{< figure src="foundation-pad.png" caption="Strip footing geometry and reinforcement plotted with Python in Excel." alt="Plotted strip footing plan with dimensions" >}}
 
 ## Computation
 
-This is serious stuff — you can use **pandas**, **numpy**, and **scipy**, which makes a lot of things possible: matrix math, statistics, and other scientific computation.
+This is serious stuff - you can use **pandas**, **numpy**, and **scipy**, which makes a lot of things possible: matrix math, statistics, and other scientific computation.
 
 The full list of libraries Excel is equipped with can be found in the [official library list](https://support.microsoft.com/en-us/excel/python/open-source-libraries-and-python-in-excel).
 
@@ -129,29 +129,32 @@ pd.concat([out, res], axis=1)
 
 The result gets printed into cells, and Python can then be used again for visualisation.
 
-{{< figure src="reinforcement-results.png" caption="Reinforcement ratio results visualized in Excel via Python" alt="Screenshot of reinforcement ratio plot in Excel" >}}
+{{< figure src="reinforcement-results.png" caption="Reinforcement ratio results visualized in Excel via Python." alt="Screenshot of reinforcement ratio plot in Excel" >}}
+
+These are just a few examples from my private library. In a similar manner, I've used this for visualization in commercial work as well - for example, in a soil subgrade calculator built from FE data exported from calculation software.
 
 ## You Don't Need to Know How to Code
 
-Just ask AI to build the code for you — remember to explicitly mention "Python in Excel" in your prompt.
+Just ask AI to build the code for you - remember to explicitly mention "Python in Excel" in your prompt.
 
 I've tested both **Copilot in Excel** and **Claude in Excel**, and both work great. You can also use AI models outside of Excel, but the built-in ones have full access to your data, which saves time.
 
 ## Why This Is Useful
 
-Not everyone knows Python, and people hesitate to use things that look complicated. The Excel interface helps bridge that gap — you can build small things that make a real difference for your team, and make your reports look good.
+Not everyone knows Python, and people hesitate to use things that look complicated. The Excel interface helps bridge that gap - you can build small things that make a real difference for your team, and make your reports look good.
 
 ## How to Start
 
-Go to "Formulas" on the top ribbon and check if you can see the Python tools. If yes, you're good to go — just prompt an AI. Results go into a cell, preceded by **=PY**, then use **Ctrl+Enter** to commit the code into the cell.
+Go to "Formulas" on the top ribbon and check if you can see the Python tools. If yes, you're good to go - just prompt an AI. Results go into a cell, preceded by **=PY**, then use **Ctrl+Enter** to commit the code into the cell.
 
 ## Limitations
 
 The solution isn't perfect. Limitations I've found so far:
 
-- Excel has a limit of 8,192 characters per formula, and the code is treated as a formula — so keep code light, avoid unnecessary comments, and use one-liners where possible.
+- Excel has a limit of 8,192 characters per formula, and the code is treated as a formula - so keep code light, avoid unnecessary comments, and use one-liners where possible.
 - There are some computation limits; I wouldn't recommend it for very heavy data, but test the limit yourself.
-- Excel sometimes doesn't cooperate and displays `#CONNECT!` — hitting **Reset Runtime** usually helps.
+- Excel sometimes doesn't cooperate and displays `#CONNECT!` - hitting **Reset Runtime** usually helps.
 - Error messages are fairly vague, but AI usually handles working through them.
+- You're restricted to the preinstalled libraries - it's a closed box, with no option to install additional packages or to import/export files outside of the Excel file itself.
 
 See the [official documentation](https://support.microsoft.com/en-us/excel/python/introduction-to-python-in-excel) for this feature.
