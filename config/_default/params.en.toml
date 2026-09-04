@@ -46,9 +46,12 @@ keywords = ["structural engineering", "software engineering", "coding", "portfol
 
 [social]
   Email = "poczta@mwolinski.com"
-  GitHub = "https://github.com/m-wolin"
-  Linkedin = "https://www.linkedin.com/in/mwolinski/"
-  RSS = true
+  [social.GitHub]
+    url = "https://github.com/m-wolin"
+  [social.Linkedin]
+    url = "https://www.linkedin.com/in/mwolinski/"
+  [social.Youtubechannel]
+    url = "https://www.youtube.com/@Marcin_Wolinski"
 
 [sponsor]
   enable = false
