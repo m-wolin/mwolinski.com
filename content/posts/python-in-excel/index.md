@@ -27,7 +27,7 @@ A lot of the spreadsheets in my private library involve geotechnical calculation
 Another real-life example is a spreadsheet for strip footings I wrote a while ago, but it always lacked good visuals, so I hesitated to use it for official printouts. Now I can plot a nice, dynamic figure and include it directly in the final report.
 
 
-{{< figure src="foundation-pad.png" caption="Strip footing geometry and reinforcement plotted with Python in Excel." alt="Plotted strip footing plan with dimensions" >}}
+{{< figure src="foundation-pad.png" caption="Strip footing geometry plotted with Python in Excel." alt="Plotted strip footing plan with dimensions" >}}
 
 ## Computation
 
